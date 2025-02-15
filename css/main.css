@@ -131,6 +131,11 @@ header {
         font-size: 10px;
     }
 }
+@media (width <=420px) {
+    header>span {
+        font-size: 7px;
+    }
+}
 
 main {
     max-width: 1080px;
