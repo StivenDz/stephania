@@ -111,7 +111,7 @@ header {
     left: 50%;
     transform: translateX(-50%);
     color: #fff;
-    height: 37px;
+    min-height: 37px;
     max-width: max-content;
     padding: 5px 15px;
     background-color: #000;
@@ -128,7 +128,7 @@ header {
 
 @media (width <=440px) {
     header>span {
-        font-size: 10px;
+        font-size: 8px;
     }
 }
 @media (width <=420px) {
@@ -152,7 +152,7 @@ main {
     /* height: 100%; */
     color: #fff;
     position: relative;
-    z-index: 100000;
+    z-index: 100000000000000;
     gap: 20px;
 }
 

@@ -17,14 +17,16 @@ const open = () => {
 
 const revealCarousel = () => {
     let html = "";
-
+    if(window.innerWidth <= 580){
+        document.getElementById("flowersContainer")?.remove();
+    }
     data.map((photo) => {
         html += `
             <div class="card" draggable="false">
                 <div>
                     <div>
                         <figure>
-                            <img src="${photo.img}" alt="">
+                            <img src="${photo.img}" loading="lazy" alt="">
                         </figure>
                         <span>
                             Stephania & Stiven ❤️
@@ -34,7 +36,7 @@ const revealCarousel = () => {
                 </div>
                 <figure>
                     <div></div>
-                    <img src="${photo.img}" alt="">
+                    <img src="${photo.img}" loading="lazy" alt="">
                 </figure>
 
                 <figure class="icons">
