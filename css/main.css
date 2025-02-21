@@ -120,20 +120,15 @@ header {
     border: 1px solid #333333;
 }
 
-@media (width <=600px) {
+@media screen and (max-width <=600px) {
     header>span {
         font-size: 12px;
     }
 }
 
-@media (width <=440px) {
+@media screen and (max-width: 440px) {
     header>span {
-        font-size: 8px;
-    }
-}
-@media (width <=420px) {
-    header>span {
-        font-size: 7px;
+        font-size: 10px;
     }
 }
 
